@@ -6,3 +6,5 @@ python:
 script: py.test
 notifications:
   slack: nonatomiclabs:v70RKis1I9cVYwFCjzre8KA1
+after_success:
+  - cover -report coveralls
