@@ -1,4 +1,4 @@
-import pytest
+import sys
 from src.functions import multiply, add
 
 def test_multiply():
@@ -9,5 +9,7 @@ def test_add():
 	assert add(1,1) == 2
 
 def test_python3():
-	with pytest.raises(SyntaxError):
-		print("a")
+	if sys.version_info[0] == 3:
+		assert False
+	else:
+		assert True
