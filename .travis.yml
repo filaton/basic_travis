@@ -5,8 +5,9 @@ python:
   - "3.4"
 install:
   - pip install pytest pytest-cov
+  - pip install pytest-pep8
   - pip install coveralls
-script: py.test --cov
+script: py.test --pep8 --cov .
 notifications:
   slack: nonatomiclabs:v70RKis1I9cVYwFCjzre8KA1
 after_success:
