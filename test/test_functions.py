@@ -1,3 +1,4 @@
+import pytest
 from src.functions import multiply, add
 
 def test_multiply():
@@ -9,4 +10,4 @@ def test_add():
 
 def test_python3():
 	with pytest.raises(SyntaxError):
-		print "a"
+		print("a")
