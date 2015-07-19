@@ -6,7 +6,7 @@ python:
 install:
   - pip install pytest pytest-cov
   - pip install coveralls
-script: py.test
+script: py.test --cov
 notifications:
   slack: nonatomiclabs:v70RKis1I9cVYwFCjzre8KA1
 after_success:
