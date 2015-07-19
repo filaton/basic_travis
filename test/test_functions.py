@@ -10,6 +10,6 @@ def test_add():
 
 def test_python3():
 	if sys.version_info[0] == 3:
-		assert False
+		assert True
 	else:
 		assert True
