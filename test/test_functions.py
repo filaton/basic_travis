@@ -8,4 +8,5 @@ def test_add():
 	assert add(1,1) == 2
 
 def test_python3():
-	assert False, print "Bad assert"
+	with pytest.raises(SyntaxError):
+		print "a"
